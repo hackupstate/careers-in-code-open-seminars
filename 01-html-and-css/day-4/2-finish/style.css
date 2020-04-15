@@ -1,0 +1,22 @@
+body {
+  background-color: powderblue;
+}
+
+.container {
+  background-color: white;
+  padding-top: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #aaa;
+}
+.jumbotron {
+  margin-bottom: 0px;
+}
+
+form {
+  margin-top: 15px;
+}
+
+.btn {
+  width: 100%;
+}
