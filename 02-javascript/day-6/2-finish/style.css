@@ -1,0 +1,27 @@
+body {
+  background-color: powderblue;
+  padding-bottom: 50px;
+}
+
+.container {
+  background-color: white;
+  padding-top: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #aaa;
+}
+.jumbotron {
+  margin-bottom: 0px;
+}
+
+form {
+  margin-top: 15px;
+}
+
+.btn {
+  width: 100%;
+}
+
+.card {
+  margin-bottom: 10px;
+}

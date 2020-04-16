@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Profile</title>
+    <meta name="description" content="About Me Profile" />
+    <meta name="author" content="Dave B" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!--Profile-->
+      <section class="jumbotron">
+        <div class="row">
+          <div class="col-6">
+            <div class="profile_picture">
+              <!-- <img
+                class="img-fluid rounded"
+                alt="User's profile picture"
+                src="water.jpg"
+              /> -->
+              <img
+                class="img-fluid rounded"
+                alt="User's profile picture"
+                src="https://source.unsplash.com/500x400/?nature,water"
+              />
+            </div>
+          </div>
+          <div class="col-6 d-flex flex-column justify-content-center card">
+            <h1 id="name">First Name</h1>
+            <h2 id="title">My Title</h2>
+            <hr />
+            <p id="about">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
+              numquam id nobis!
+            </p>
+            <div class="row">
+              <!--Buttons-->
+              <div class="col-6 text-center">
+                <button
+                  onclick="follow()"
+                  type="button"
+                  class="btn btn-primary"
+                >
+                  Follow me on Twitter
+                </button>
+              </div>
+              <div class="col-6 text-center">
+                <button
+                  onclick="edit()"
+                  type="button"
+                  class="btn btn-secondary"
+                >
+                  Edit
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section>
+        <!--Social Media Links-->
+
+        <div class="d-flex justify-content-around">
+          <a href="#">My Github Portfolio</a>
+          <a href="#">My Twitter page</a>
+          <a href="#">My Linkedin Page</a>
+        </div>
+      </section>
+
+      <hr />
+
+      <!--Lists about personal hobbies-->
+      <section>
+        <div class="row">
+          <div class="col-12">
+            <h3>Lists of my favorite things</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <ul>
+              <li>Hobby 1</li>
+              <li>Hobby 2</li>
+              <li>Hobby 3</li>
+            </ul>
+          </div>
+          <!--List of favorite foods-->
+          <div class="col-6">
+            <ol>
+              <li>Favorite Food 1</li>
+              <li>Favorite Food 2</li>
+              <li>Favorite Food 3</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <hr />
+
+      <!--Table of family members-->
+      <section>
+        <h3>Table of my family</h3>
+        <div class="col-8 offset-md-2">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <!--Headers-->
+                <th scope="col">Name</th>
+                <th scope="col">Relationship with Me</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <!--First column-->
+                <td>First Last</td>
+                <td>Relation</td>
+              </tr>
+              <tr>
+                <!--Second column-->
+                <td>First Last</td>
+                <td>Relation</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <hr />
+      <!--Text form-->
+      <section>
+        <h3>Comments</h3>
+
+        <div class="row">
+          <!--Comment view-->
+          <div id="comment-cards" class="col-8 offset-2">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Add a comment below!</h5>
+                <p class="card-text">
+                  Type your comment in the input box then click Submit or press
+                  Enter.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form>
+          <div class="row">
+            <div class="col-6 offset-2">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="comments"
+                  name="comments"
+                  placeholder="Add a comment"
+                  class="form-control"
+                />
+              </div>
+            </div>
+
+            <!--Submit button-->
+            <div class="col-2 text-center">
+              <button id="submit" type="submit" class="btn btn-success">
+                Submit
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <script>
+      function follow() {
+        window.open("https://www.twitter.com/joeybuczek");
+      }
+      function edit() {
+        const name = document.querySelector("#name");
+        name.innerText = "Joey Buczek";
+        const title = document.querySelector("#title");
+        title.innerText = "Instructor";
+        const about = document.querySelector("#about");
+        about.innerText =
+          "Software Developer, Model Railroader, Woodworker, Photographer, Husband, Father, Teacher, Creator, Never-give-upper";
+      }
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>
