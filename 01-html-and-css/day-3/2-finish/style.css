@@ -1,8 +1,14 @@
 body {
   background: black;
   color: white;
+  background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)),
+    /* bottom, image */ url("./water.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
-
+/* 
 .winter {
   background-color: skyblue;
   color: white;
@@ -26,9 +32,9 @@ body {
   background: black;
   font-family: sans-serif;
   font-size: 50px;
-}
+} */
 section {
-  margin-top: 200px;
+  margin-top: 50px;
 }
 
 div {
@@ -38,20 +44,27 @@ div {
   font-family: sans-serif;
   border-radius: 5px;
   padding: 20px;
-  height: 300px;
-  width: 500px;
+  width: 80%;
+  max-width: 500px;
   margin: 0 auto;
+}
+img {
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
 }
 h1 {
   font-family: "Courier New", Courier, monospace;
+  font-size: 50px;
+  font-weight: bold;
   padding: 20px;
 }
 p {
   text-transform: uppercase;
+  padding: 20px;
 }
 a {
   color: red;
-  float: right;
   margin-top: 50px;
   padding: 0 10px;
 }
