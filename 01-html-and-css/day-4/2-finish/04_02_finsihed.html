@@ -20,7 +20,8 @@
       <!--Profile-->
       <section class="jumbotron">
         <div class="row">
-          <div class="col-6">
+          <h1 class="col-md-12 display-3">Profile Page</h1>
+          <div class="col-md-6">
             <div class="profile_picture">
               <!-- <img
                 class="img-fluid rounded"
@@ -31,28 +32,37 @@
                 class="img-fluid rounded"
                 alt="User's profile picture"
                 src="https://source.unsplash.com/500x400/?nature,water"
+                style="height: 100%; object-fit: cover;"
               />
             </div>
           </div>
-          <div class="col-6 d-flex flex-column justify-content-center card">
-            <h1>First Name</h1>
-            <h2>My Title</h2>
-            <hr />
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
-              numquam id nobis!
-            </p>
-            <div class="row">
-              <!--Buttons-->
-              <div class="col-6 text-center">
-                <button type="button" class="btn btn-primary">
-                  Add Me as a Friend
-                </button>
-              </div>
-              <div class="col-6 text-center">
-                <button type="button" class="btn btn-secondary">
-                  Edit
-                </button>
+          <div class="col-md-6">
+            <div class="card" style="padding: 10px; height: 100%;">
+              <h2>Name</h2>
+              <h3>Title</h3>
+              <hr />
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                numquam id nobis!
+              </p>
+              <div class="row">
+                <!--Buttons-->
+                <div
+                  class="col-sm-6 text-center"
+                  style="margin-top: 10px; margin-bottom: 10px;"
+                >
+                  <button type="button" class="btn btn-primary">
+                    Add Friend
+                  </button>
+                </div>
+                <div
+                  class="col-sm-6 text-center"
+                  style="margin-top: 10px; margin-bottom: 10px;"
+                >
+                  <button type="button" class="btn btn-secondary">
+                    Edit
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -68,6 +78,13 @@
           <a href="#">My Linkedin Page</a>
         </div>
       </section>
+      <section>
+        <div class="row text-center">
+          <div class="col-md"><a href="">Github</a></div>
+          <div class="col-md"><a href="">Twitter</a></div>
+          <div class="col-md"><a href="">LinkedIn</a></div>
+        </div>
+      </section>
 
       <hr />
 
@@ -79,7 +96,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-6">
+          <div class="col-6 col-md-3 offset-md-3">
             <ul>
               <li>Hobby 1</li>
               <li>Hobby 2</li>
@@ -87,7 +104,7 @@
             </ul>
           </div>
           <!--List of favorite foods-->
-          <div class="col-6">
+          <div class="col-6 col-md-3">
             <ol>
               <li>Favorite Food 1</li>
               <li>Favorite Food 2</li>
@@ -101,7 +118,7 @@
       <!--Table of family members-->
       <section>
         <h3>Table of my family</h3>
-        <div class="col-8 offset-md-2">
+        <div class="col-md-8 offset-md-2">
           <table class="table table-striped">
             <thead>
               <tr>
@@ -132,7 +149,7 @@
 
         <div class="row">
           <!--Comment view-->
-          <div class="col-8 offset-2">
+          <div class="col-md-8 offset-md-2">
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">A Comments</h5>
@@ -143,7 +160,7 @@
         </div>
         <form>
           <div class="row">
-            <div class="col-6 offset-2">
+            <div class="col-md-6 offset-md-2">
               <div class="form-group">
                 <input
                   type="text"
@@ -156,7 +173,7 @@
             </div>
 
             <!--Submit button-->
-            <div class="col-2 text-center">
+            <div class="col-md-2 text-center">
               <button type="submit" class="btn btn-success">Submit</button>
             </div>
           </div>

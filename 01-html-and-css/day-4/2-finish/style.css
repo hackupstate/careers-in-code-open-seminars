@@ -4,8 +4,7 @@ body {
 
 .container {
   background-color: white;
-  padding-top: 10px;
-  margin-top: 10px;
+
   border-radius: 10px;
   box-shadow: 5px 5px 5px #aaa;
 }

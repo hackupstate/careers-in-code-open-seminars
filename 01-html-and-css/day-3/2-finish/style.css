@@ -1,0 +1,57 @@
+body {
+  background: black;
+  color: white;
+}
+
+.winter {
+  background-color: skyblue;
+  color: white;
+  font-weight: 20px;
+}
+
+.spring {
+  background: palegreen;
+  color: lightpink;
+  font-weight: 30px;
+}
+
+.summer {
+  background: orangered;
+  color: orange;
+  font-family: serif;
+  font-size: 40px;
+}
+.fall {
+  color: orange;
+  background: black;
+  font-family: sans-serif;
+  font-size: 50px;
+}
+section {
+  margin-top: 200px;
+}
+
+div {
+  text-align: center;
+  background-color: white;
+  color: #333;
+  font-family: sans-serif;
+  border-radius: 5px;
+  padding: 20px;
+  height: 300px;
+  width: 500px;
+  margin: 0 auto;
+}
+h1 {
+  font-family: "Courier New", Courier, monospace;
+  padding: 20px;
+}
+p {
+  text-transform: uppercase;
+}
+a {
+  color: red;
+  float: right;
+  margin-top: 50px;
+  padding: 0 10px;
+}
